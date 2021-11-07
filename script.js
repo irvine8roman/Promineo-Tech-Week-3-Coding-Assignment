@@ -38,18 +38,20 @@ console.log(listOfNames);
 
 console.log("#3-------------------"); // 3.
 
-names[names.length - 1]; //You can access the last element of an array using this piece of code. The .length returns the number of elements in the array
-// while the minus 1 will give you the last element since arrays are zero index
+// names[names.length - 1]; //You can access the last element of an array using this piece of code. The .length returns the number of elements in the array
+// // while the minus 1 will give you the last element since arrays are zero index
 
 console.log("#4-------------------"); // 4.
-names[0]; //You can access the first element of any array by using the name of the array folowed by [0]. Since arrays are zero index
+// names[0]; //You can access the first element of any array by using the name of the array folowed by [0]. Since arrays are zero index
 
 console.log("#5-------------------"); // 5.
 
-let nameLengths = [];
+let characterLengths = [];
 
 for (let i = 0; i < names.length; i++) {
-  nameLengths = names.push(names.length[i]);
+  characterLengths.push(names[i].length);
 }
 
-console.log(nameLengths);
+console.log(characterLengths);
+
+console.log("#6-------------------"); // 6.
